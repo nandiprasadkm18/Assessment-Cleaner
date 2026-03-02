@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera Assessment Cleaner | Pure Text</title>
+    <meta name="description"
+        content="Clean academic integrity disclaimers from Coursera assessment screenshots and text instantly.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Assessment Cleaner</h1>
+            <p class="subtitle">Focus on your learning</p>
+        </header>
+
+        <main class="editor-grid">
+            <div class="box">
+                <label for="input-text">
+                    Input Text
+                    <span class="badge">Paste here</span>
+                </label>
+                <textarea id="input-text" placeholder="Paste your Coursera assessment text here..."></textarea>
+            </div>
+
+            <div class="box">
+                <label for="output-text">
+                    Cleaned Output
+                    <button class="btn-copy" id="btn-copy">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        Copy
+                    </button>
+                </label>
+                <textarea id="output-text" readonly placeholder="Your cleaned text will appear here..."></textarea>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Assessment Cleaner. Designed for productivity.</p>
+        </footer>
+    </div>
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Important Notes</h2>
+            </div>
+            <div class="modal-body">
+                <p>This tool is for personal study and educational purposes only.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" id="btn-modal-ok">I Understand</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
